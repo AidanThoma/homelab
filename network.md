@@ -1,5 +1,7 @@
 # Network
 
+![](diagrams\Homelab.png)
+
 ## LAN
 
 | Setting | Value |

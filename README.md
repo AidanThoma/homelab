@@ -9,8 +9,12 @@ Documentation for my Proxmox-based homelab used to learn virtualization, Linux a
                             |
                     Cloudflare Tunnel
                             |
-                      Docker VM
-                    192.168.4.3
+                       Proxmox Host
+                        192.168.4.2
+                            |
+                            |
+                        Docker VM
+                       192.168.4.3
                             |
              +--------------+--------------+
              |              |              |
@@ -53,13 +57,13 @@ lubuntu.aidanthoma.com -> 192.168.4.5
 ## Services
 
 - Proxmox VE
-- Docker
-- OpenWebUI
+- Docker (Containers)
+- OpenWebUI (AI)
 - Cloudflare Tunnel
-- Prometheus
-- cAdvisor
+- Prometheus (Fetch PVE Logs)
+- cAdvisor (Fetch Docker Container Logs)
 - Proxmox exporter
-- AdGuard Home
+- AdGuard Home (DNS)
 - SSH
 
 ## Documentation
@@ -73,26 +77,9 @@ lubuntu.aidanthoma.com -> 192.168.4.5
 - [Security](SECURITY.md)
 - [Runbooks](runbooks/)
 
-## Goals
-
-- Centralize infrastructure documentation
-- Make hosts reachable by memorable DNS names
-- Monitor Proxmox and Docker workloads
-- Keep management services off the public internet where possible
-- Automate deployments and configuration over time
-- Maintain reproducible recovery procedures
 
 ## Planned Improvements
 
-- Grafana dashboards
-- Alertmanager notifications
-- Uptime Kuma
+- Grafana dashboard for Docker container
 - Proxmox Backup Server
-- Centralized logging with Grafana Loki / Alloy
-- Ansible configuration management
-- VLAN segmentation
 - Tailscale or WireGuard for remote administration
-
-## Security Notes
-
-This repository must never contain passwords, API tokens, private keys, Cloudflare tunnel credentials, recovery codes, or other secrets.
