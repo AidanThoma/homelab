@@ -1,6 +1,6 @@
 # Aidan's Homelab
 
-Documentation for my Proxmox-based homelab used to learn virtualization, Linux administration, Docker, DNS, monitoring, networking, secure remote access, and self-hosted AI.
+Documentation for my Proxmox-based homelab used to learn virtualization, Linux administration, Docker, DNS, monitoring, networking, secure remote access, and "self-hosted" AI.
 
 ## Current Architecture
 
@@ -11,7 +11,7 @@ Documentation for my Proxmox-based homelab used to learn virtualization, Linux a
 | Host | Type | IP | Purpose |
 |---|---|---:|---|
 | Proxmox | Hypervisor | `192.168.4.2` | Runs VMs and LXCs |
-| Docker | VM | `192.168.4.3` | Docker workloads and self-hosted services |
+| Docker | VM | `192.168.4.3` | Docker workloads and "self-hosted" services |
 | DNS | Debian LXC | `192.168.4.4` | AdGuard Home internal DNS |
 | Lubuntu | VM | `192.168.4.5` | Linux desktop / lab VM |
 
