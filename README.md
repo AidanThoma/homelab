@@ -4,7 +4,7 @@ Documentation for my Proxmox-based homelab used to learn virtualization, Linux a
 
 ## Current Architecture
 
-![](diagrams\Homelab.png)
+![Homelab Network](diagrams/Homelab.png)
 
 ## Hosts
 
