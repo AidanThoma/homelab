@@ -4,33 +4,7 @@ Documentation for my Proxmox-based homelab used to learn virtualization, Linux a
 
 ## Current Architecture
 
-```text
-                         Internet
-                            |
-                    Cloudflare Tunnel
-                            |
-                       Proxmox Host
-                        192.168.4.2
-                            |
-                            |
-                        Docker VM
-                       192.168.4.3
-                            |
-             +--------------+--------------+
-             |              |              |
-         OpenWebUI      Prometheus      cAdvisor
-                                           |
-                                      Container metrics
-
-     Proxmox Host -------------------- pve-exporter
-     192.168.4.2                         |
-          |                              |
-          +-------------------------- Prometheus
-          |
-          +-- AdGuard Home LXC       192.168.4.4
-          |
-          +-- Lubuntu VM             192.168.4.5
-```
+![](diagrams\Homelab.png)
 
 ## Hosts
 
