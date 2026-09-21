@@ -56,4 +56,4 @@ lubuntu.aidanthoma.com -> 192.168.4.5
 
 - Grafana dashboard for Docker container
 - Proxmox Backup Server
-- Tailscale or WireGuard for remote administration
+- Tailscale or WireGuard as a VPN
